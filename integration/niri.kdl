@@ -1,0 +1,16 @@
+spawn-at-startup "quickshell" "--no-duplicate" "--path" "/home/nainteeth/.config/quickshell"
+
+binds {
+    Mod+C repeat=false hotkey-overlay-title="Clock pill" {
+        spawn "quickshell" "ipc" "--path" "/home/nainteeth/.config/quickshell" "call" "pill" "toggle" "clock";
+    }
+    Mod+N repeat=false hotkey-overlay-title="Network pill" {
+        spawn "quickshell" "ipc" "--path" "/home/nainteeth/.config/quickshell" "call" "pill" "toggle" "network";
+    }
+    Mod+T repeat=false hotkey-overlay-title="System tray pill" {
+        spawn "quickshell" "ipc" "--path" "/home/nainteeth/.config/quickshell" "call" "pill" "toggle" "tray";
+    }
+    Mod+A repeat=false hotkey-overlay-title="Audio pill" {
+        spawn "quickshell" "ipc" "--path" "/home/nainteeth/.config/quickshell" "call" "pill" "toggle" "volume";
+    }
+}
